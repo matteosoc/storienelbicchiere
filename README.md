@@ -25,6 +25,12 @@ The theme includes the following pages and templates:
 - **header.php**: Contains the site's header with navigation and logo.
 - **footer.php**: Contains the footer with social media links, newsletter signup, and other useful information.
 
+## Files not included in the repository
+
+For security reasons, the following files have not been included in the repository:
+- **functions.php**: This file contains some security settings. It has not been included in the repository to avoid accidental exposure of sensitive configurations.
+- **header.php**: Some information related to the site's configuration may be included in this file, so it has not been included for security reasons.
+
 ## Technologies Used
 
 ### 1. WordPress
