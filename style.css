@@ -1,0 +1,863 @@
+/*
+Theme Name: Storie nel Bicchiere
+Version: 1.0
+Author: Matteo Soccal
+Description: Tema per il blog "Storie nel Bicchiere" dedicato al mondo del vino
+Text Domain: storienelbicchiere
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+/* Stile per dispositivi mobili */
+body {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+/* .debug-class {
+    border: 1px solid red;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+	color:black;
+}
+
+.content {
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+}
+
+.relative {
+    position: relative;
+}
+
+#page {
+    background-color: white;
+    min-height: 70vh;
+}
+
+span {
+    opacity: 0.6;
+}
+
+a {
+    text-decoration: none;
+    color: #242424;
+    cursor: pointer;
+}
+
+.inline {
+    display: inline-flex;
+}
+
+
+#searchBar input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 225px;
+    height: 40px;
+    font-size: 16px;
+}
+
+
+
+#home-banner {
+    height: 540px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#home-banner h1 {
+    font-size: 4rem;
+    line-height: 70px;
+    margin-bottom: 50px;
+}
+
+#home-banner h3 {
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: "Lato", serif;
+    font-style: normal;
+}
+
+#home-banner a {
+    background-color: black;
+    color: white;
+    padding: 15px 30px 15px 30px;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.width-70 {
+    width: 70%;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#primaryNav {
+    display: none;
+}
+
+#primaryNav li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#primaryNav li:first-child {
+    padding-left: 0px;
+    padding-right: 15px;
+}
+
+#primaryNav li:hover {
+    text-decoration: underline;
+}
+
+#pageContent {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#pageContent h1 {
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+
+#pageContent header {
+    padding-bottom: 20px;
+}
+
+
+#articlesGrid {
+    padding-bottom: 20px;
+}
+
+article {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#articlesGrid article h2 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* #articlesGrid article div div {
+    margin-top: 0;
+    font-size: 1rem;
+} */
+
+#articlesGrid>article>div {
+    padding-right: 15px;
+}
+
+#articlesGrid article img {
+    width: 80px;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+}
+
+#articlesGrid article a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.75rem;
+}
+
+.article-excerpt {
+    margin-bottom: 15px;
+}
+
+.article-excerpt p {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.clamp-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#articlesGrid article ul {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tags-list li {
+    background-color: rgb(234, 234, 234);
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px 5px 10px;
+    font-size: 0.75rem;
+}
+
+#sidebar .tags-list li {
+    background-color: rgb(234, 234, 234);
+    border-radius: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 12px 15px 12px 15px;
+    font-size: 0.8rem;
+}
+
+/* #footer {
+    background-color: black;
+    height: 600px;
+} */
+
+.text-white {
+    color: white;
+}
+
+/* #secondaryNav {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#secondaryNav li {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+#secondaryNav li a {
+    color: white;
+}
+
+#secondaryNav ul li:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+} */
+
+/* 
+#colophon {
+    padding-top: 20px;
+    font-size: 10px;
+    color: rgb(238, 238, 238);
+} */
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+
+.border-bottom {
+    border-bottom: 1px solid rgb(242, 242, 242);
+}
+
+.border-bottom-black {
+    border-bottom: 1px solid black;
+}
+
+#sidebar {
+    display: none;
+    width: 600px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#grapesContainer {
+    display: none;
+}
+
+#grapesContainer img {
+    display: none;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#authorBio {
+    padding-bottom: 20px;
+}
+
+#authorBio .image-container {
+    overflow: hidden; /* Nasconde le parti dell'immagine che escono dal rettangolo */
+    position: relative;
+    aspect-ratio: 1/1;
+    margin-bottom: 15px;
+}
+
+#authorBio img {
+    width: 100%;
+    height: auto; /* Mantiene le proporzioni */
+    object-fit: cover; /* Assicura che l'immagine riempia il contenitore */
+    object-position: top; /* Mostra la parte superiore dell'immagine */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#authorBio h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#authorBio p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#topics {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#topics div {
+    padding-bottom: 20px;
+}
+
+#sidebar ul {
+    margin-bottom: 15px;
+}
+
+/* #sidebar ul li {
+    background-color: rgb(234, 234, 234);
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 8px 14px 8px 14px;
+    font-size: 14px;
+} */
+
+#socials {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#socialsIcons {
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+
+#socialsIcons button {
+    margin-right: 10px;
+}
+
+.display-none {
+    display: none;
+}
+
+
+
+
+/* single.php */
+
+
+#articlePage {
+    max-width: 680px;
+    min-height: 70vh;
+}
+
+#articlePage article {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+#articlePage h1 {
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+}
+
+#article-content p {
+    margin-top: 20px;
+    line-height: 35px;
+    font-size: 1.4rem;
+    font-family: "EB Garamond", serif;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+
+
+#articlePage img {
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+}
+
+#article-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#article-content h3 {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#article-content h4 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#article-content h5 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#article-content h6 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#articlePage img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#articlePage div {
+    padding-right: 0;
+}
+
+#authorImgContainer {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+    position: relative;
+    aspect-ratio: 1 / 1
+}
+
+#authorImgContainer img {
+    width: 175%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    right: -19px;
+    margin:0;
+}
+
+#author-box {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+#author-box div {
+    margin-bottom: 0px;
+}
+
+#author-box div h3 {
+    padding-bottom: 5px;
+}
+
+#author-box div div {
+    margin-bottom: 0px;
+}
+
+#author-box > div.inline > div:nth-child(2) > div {
+    font-family: "Lato", serif;
+    font-size: 1rem;
+    color: grey;
+}
+
+/* sovrascrittura citazioni */
+
+.wp-block-pullquote {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 0;
+    border-left: 1px solid black;
+    text-align: left;
+}
+
+.wp-block-pullquote p {
+    text-align: left;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.wp-block-pullquote cite {
+    margin-top: 20px;
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    text-align: left !important;
+}
+
+
+/* category, search, tags */
+
+
+/* sidebar -> categories */
+
+#categories {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#categories div {
+    padding-bottom: 20px;
+}
+
+.category-list li a {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.category-list li a:hover {
+    text-decoration: underline;
+}
+
+.subcategory-list {
+    padding-top: 10px;
+}
+
+.subcategory-list li a {
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+.subcategory-list li a:hover {
+    text-decoration: underline;
+}
+
+/* sovrascrittura ul wordpress */
+
+ul.wp-block-list {
+    list-style-type: disc;
+    margin: 20px 0px 20px 40px;
+}
+
+ul.wp-block-list li {
+    line-height: 35px;
+    font-size: 1.4rem;
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+ul.wp-block-list li a {
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+
+#share-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* pagination */
+
+div.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.page-numbers {
+    margin-right: 10px;
+    opacity: 0.6;
+}
+
+.next {
+    opacity: 1;
+}
+
+/* .nav-links {
+    display: flex;
+    align-items: center;
+} */
+
+.align-items-center .pagination .page-number {
+    border-radius: 4px;
+}
+
+.align-items-center .pagination .current {
+    opacity: 1;
+}
+
+
+
+/* didascalie immagini */
+
+
+figure.wp-block-image {
+    margin: 40px 0;
+    text-align: center;
+}
+
+figure.wp-block-image figcaption {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* 404 */
+
+#page-404 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    text-align: center;
+}
+
+#page-404 .error-code {
+    font-size: 8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#page-404 .error-message {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #555;
+}
+
+
+
+
+
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    #pageContent h1 {
+        font-size: 3rem;
+    }
+
+    #grapesContainer {
+        display: block;
+        object-fit: contain;
+        position: absolute;
+        right: -120px;
+        top: -100px;
+    }
+
+    #grapesContainer img {
+        display: block;
+        width: 600px;
+        rotate: -40deg;
+    }
+
+    #home-banner h3 {
+        width: 400px;
+    }
+
+    #articlesGrid article h2 {
+        font-size: 1.5rem;
+    }
+
+    .article-excerpt p {
+        font-size: 1rem;
+    }
+
+    #articlesGrid article img {
+        width: 200px;
+        height: auto;
+        object-fit: cover;
+        aspect-ratio: 3/2;
+    }
+
+    #searchBar input {
+        width: 600px;
+    }
+
+    #articlePage h1 {
+        font-size: 3rem;
+        padding-bottom: 20px;
+    }
+
+    #primaryNav {
+        display: block;
+    }
+
+    #primaryNav li {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #primaryNav li:first-child {
+        padding-left: 0px;
+        padding-right: 15px;
+    }
+
+    #primaryNav li:hover {
+        text-decoration: underline;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 820px) {
+
+    #primaryNav {
+        display: block;
+    }
+
+    #home-banner h3 {
+        width: 450px;
+    }
+
+    #grapesContainer {
+        top: -150px;
+    }
+
+    #grapesContainer img {
+        width: 700px;
+        rotate: -40deg;
+    }
+
+    #home-banner h3 {
+        width: 50%;
+    }
+
+    #articlePage h1 {
+        font-size: 3rem;
+        padding-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+/* DESKTOP */
+
+@media screen and (min-width: 1024px) {
+
+    #grapesContainer {
+        right: -50px;
+    }
+
+    #grapesContainer img {
+        width: 700px;
+        rotate: -40deg;
+    }
+
+    #home-banner h3 {
+        width: 500px;
+    }
+
+    #sidebar {
+        display: block;
+        position: sticky; /* Fa sì che la sidebar resti visibile durante lo scorrimento */
+        top: 40px;
+        height: fit-content;
+    }
+
+    #pageContent {
+        padding-top: 20px;
+        padding-right: 20px;
+        border-right: 1px solid rgb(242, 242, 242);
+        max-width: 650px;
+    }
+
+    #page {
+        max-width: 1024px;
+    }
+
+    .content {
+        max-width: 1024px;
+    }
+
+    #grapesContainer {
+        display: block;
+        object-fit: contain;
+        position: absolute;
+        right: -105px;
+        top: -100px;
+    }
+
+    #sidebar {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    #articlePage h1 {
+        font-size: 48px;
+        padding-bottom: 20px;
+    }
+
+}

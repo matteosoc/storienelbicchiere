@@ -1,0 +1,39 @@
+/* Footer Styles */
+
+#footer {
+    background-color: black;
+    height: 200px;
+    padding: 20px 0;
+}
+
+.text-white {
+    color: white;
+}
+
+#secondaryNav {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#secondaryNav li {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+#secondaryNav li a {
+    color: white;
+}
+
+#secondaryNav ul li:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+#colophon {
+    padding-top: 20px;
+    font-size: 0.8rem;
+    color: rgb(238, 238, 238);
+}
